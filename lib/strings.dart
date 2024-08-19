@@ -1,0 +1,10 @@
+const emailidorpasswordEmptydailogtitle = 'Please fill in both password and the email field';
+const emailorpasswordEmptydescription = 'You seem to have forgotten to enter the email or password field or both ';
+const LoginerrorDailogtitle = 'Login error';
+const LoginerrorDailogContent = 'Invalid email/password combination . Please try again with login credentials';
+const Pleasewait= 'Please wait';
+const Enteryourpasswordere= 'Enter your password.....';
+const Enteryouremail= 'Enter your email.....';
+const ok = 'Ok';
+const login = 'Login';
+const homepage = 'HomePage';
