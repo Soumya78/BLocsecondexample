@@ -9,7 +9,7 @@ class LoginAction implements Appaction{
   final String email;
   final String password ;
 
-  LoginAction({required this.email, required this.password});
+ const  LoginAction({required this.email, required this.password});
 }
 @immutable 
 class LoadnotesAction implements Appaction{

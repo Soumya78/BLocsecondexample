@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class Loginhandle{
 final String token ;
 
-  Loginhandle({required this.token});
+ const Loginhandle({required this.token});
 
   const Loginhandle.foobar() : token = "Foobaar";
   @override

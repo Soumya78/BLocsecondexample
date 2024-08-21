@@ -11,9 +11,9 @@ abstract class LoginApiProtocol {
 }
 
 class Loginapi implements LoginApiProtocol {
-  const Loginapi._sharedInstance();
-  static const Loginapi _shared = Loginapi._sharedInstance();
-  factory Loginapi.instance() => _shared;
+  // const Loginapi._sharedInstance();
+  // static const Loginapi _shared = Loginapi._sharedInstance();
+  // factory Loginapi.instance() => _shared;
   @override
   Future<Loginhandle?> login(
           {required String email, required String password}) =>

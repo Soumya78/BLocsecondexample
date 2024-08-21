@@ -1,9 +1,10 @@
+// ignore: file_names
 import 'package:flutter/foundation.dart';
 @immutable 
 class Note{
   final String title ;
 
-  Note({required this.title});
+  const Note({required this.title});
 
   @override
   String toString() => 'Note (title = $title)';
