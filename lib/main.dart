@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return   MaterialApp(
       home:  MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Appbloc(loginApiProtocol: Loginapi(), notesapiProtocol: Notesapi()),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text(homepage),
+          title: Text(homepage),
         ),
         body: BlocConsumer<Appbloc, AppState>(builder: (context, state) {
           final notes = state.fetchnotes;
@@ -64,8 +64,11 @@ class _MyHomePageState extends State<MyHomePage> {
             LoadingScreen.instance().hide();
           }
           //display possible errors
-          final loginerror = state.loginerror!;
+          final loginerror = state.loginerror;
+          print(loginerror);
+
           if (loginerror == null) {
+
             showgenereicdailogue(
                 context: context,
                 title: LoginerrorDailogContent,

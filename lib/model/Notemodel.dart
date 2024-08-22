@@ -1,4 +1,8 @@
 // ignore: file_names
+// ignore: file_names
+// ignore: file_names
+// ignore_for_file: file_names
+
 import 'package:flutter/foundation.dart';
 @immutable 
 class Note{

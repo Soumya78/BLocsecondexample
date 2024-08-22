@@ -16,9 +16,11 @@ class Loginapi implements LoginApiProtocol {
   // factory Loginapi.instance() => _shared;
   @override
   Future<Loginhandle?> login(
+    
           {required String email, required String password}) =>
+          
       Future.delayed(
         const Duration(seconds: 2),
-        () => email == 'foorbar.com' && password == 'foobar',
+        () => email == 'foobar.com' && password == 'foobar',
       ).then((isloggedin) => isloggedin ? const Loginhandle.foobar() : null);
 }

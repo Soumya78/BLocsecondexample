@@ -11,7 +11,7 @@ abstract class NotesapiProtocol{
 class Notesapi implements NotesapiProtocol{
   @override
   Future<Iterable<Note>?> getnotes({required Loginhandle loginhandle})
-   => Future.delayed(Duration(seconds: 2)
+   => Future.delayed(const Duration(seconds: 2)
   ,()=> loginhandle == const Loginhandle.foobar()? mockNotes : null,);
   }
   

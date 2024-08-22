@@ -14,6 +14,8 @@ class LoginButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(onPressed: (){
      if(emailcontroller.text.isEmpty || passwordcontroller.text.isEmpty){
+       print(emailcontroller.text);
+       print(passwordcontroller.text);
       showgenereicdailogue(context: context, 
       title: emailidorpasswordEmptydailogtitle,
        content: emailorpasswordEmptydescription, 

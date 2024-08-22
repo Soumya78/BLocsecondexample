@@ -6,14 +6,14 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 
 class LoginView extends HookWidget {
   final OnLogintapped onLogintapped;
-   LoginView({required this.onLogintapped});
+   const LoginView({super.key, required this.onLogintapped});
 
   @override
   Widget build(BuildContext context) {
     final emailcontroller = useTextEditingController();
     final passwordcontroller = useTextEditingController();
     return Padding(
-      padding: EdgeInsets.all(8),
+      padding: const EdgeInsets.all(8),
       child: Column(
         children: [
           EmailTextfield(emailcontroller: emailcontroller),

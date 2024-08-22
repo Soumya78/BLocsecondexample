@@ -1,3 +1,7 @@
+// ignore: duplicate_ignore
+// ignore: file_names
+// ignore_for_file: file_names
+
 import 'package:flutter/foundation.dart' show immutable;
 import 'package:flutter/material.dart';
 
@@ -12,7 +16,7 @@ final String token ;
   bool operator ==(covariant Loginhandle other) => token == other.token ;
   
   @override
-  // TODO: implement hashCode
+  
   int get hashCode => token.hashCode;
 
   @override
